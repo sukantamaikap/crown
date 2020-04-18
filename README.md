@@ -1,3 +1,7 @@
+# crown
+
+An experimental react app built following [this](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/) ReactJS course. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
