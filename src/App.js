@@ -27,12 +27,18 @@ class App extends React.Component {
     })
   }
 
+  unsubscribeFromAuth = null
+
+  componentWillUnmount() {
+    this.unsubscribeFromAuth();
+  }
+
   render() {
   return (
         <div>
           {/* Header will be part of all the pages. Anything that has to be part of all the pages
           has to be be outside switch */}
-          <Header />
+          <Header currentUser={this.state.currentUser}/>
           <switch>
             <Route exact path='/' component= {HomrePage} />
             <Route exact path='/shop' component = {ShopPage} />
